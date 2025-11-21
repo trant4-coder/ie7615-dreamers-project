@@ -9,7 +9,7 @@ Wellness app users, developers, and researchers need interpretable AI systems th
 -------------------------
 ### Repository Structure
 
-ie7516-dreamers-project/
+ie7615-dreamers-project/
 - data/
   - Tech_Use_Stress_Wellness.csv
 - notebook/
