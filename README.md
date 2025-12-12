@@ -47,17 +47,22 @@ matplotlib, seaborn
 | Logistic Regression | Baseline linear model           |
 | Decision Tree       | Simple tree classifier          |
 | Random Forest       | Ensemble of trees               |
-| XGBoost             | Best-performing classical model |
-| MLP (baseline)      | Neural network with 2 layers    |
-| MLP (deep/wide)     | Additional NN architectures     |
+| XGBoost             | Shows overfitting               |
+| MLP                 | Neural network with 2 layers    |
 
 -------------------------
 ### Explainability Methods
 
+#### Classic Feature Importance
+1. Used for:
+- Decision Trees
+  
+2. Display:
+- Gini Impurity 
+
 #### LIME (Local Interpretable Model-Agnostic Explanations)
 
 1. Used to explain individual predictions for:
-- XGBoost
 - MLP Neural Network
 
 2. Displays:
@@ -67,10 +72,16 @@ matplotlib, seaborn
 
 #### SHAP (SHapley Additive exPlanations)
 1. Applied to:
-- XGBoost
+- Decision Trees
 - MLP 
 
 2. Shows:
 - Global feature importance
 - Direction and magnitude of effects
 - Consistency of model reasoning
+
+-------------------------
+### Results Analysis
+- Sub-group performance
+- Robustness: Accuracy (clean) vs Accuracy (noisy)
+- SHAP-LIME agreement
